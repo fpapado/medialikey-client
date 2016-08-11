@@ -9,3 +9,9 @@
 
 <p>Upvotes: {{model.upvotes}}</p>
 <p>Downvotes: {{model.downvotes}}</p>
+
+{{posts/vote-buttons 
+  model="model"
+  voteup=(action "voteup")
+  votedown=(action "votedown")
+}}
