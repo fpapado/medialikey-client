@@ -1,9 +1,11 @@
-<h1>Post show route</h1>
-<img src="{{model.source}}">
+<div>
+  <img class="w-100" src="{{model.source}}">
+  <p class="mt0 f6 mid-gray">Credits: {{model.credits}}</p>
+</div>
+<!--
 <p>{{model.title}}</p>
 <p>{{model.description}}</p>
-
-<p>Credits: {{model.credits}}</p>
+-->
 
 <p>Upvotes: {{model.upvotes}}</p>
 <p>Downvotes: {{model.downvotes}}</p>

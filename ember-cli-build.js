@@ -7,7 +7,7 @@ module.exports = function(defaults) {
     // Add options here
   });
 
-  app.import('vendor/basscss.min.css');
+  app.import('vendor/tachyons.min.css');
 
   return app.toTree();
 };
