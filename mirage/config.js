@@ -4,7 +4,7 @@ export default function() {
   this.get('/posts');
   this.get('/posts/:id');
 
-  this.get('/posts/:id/comments', function(schema, requiest) {
+  this.get('/posts/:id/comments', function(schema, request) {
     const postId = request.params.id;
     return schema.comment.where({ postId: postId });
   });
