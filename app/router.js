@@ -12,6 +12,7 @@ Router.map(function() {
       path: ':post_id'
     });
   });
+  this.route('votes');
 });
 
 export default Router;

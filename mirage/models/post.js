@@ -1,5 +1,5 @@
 import { Model, hasMany } from 'ember-cli-mirage';
 
 export default Model.extend({
-  comments: hasMany('vote')
+  votes: hasMany('vote')
 });
