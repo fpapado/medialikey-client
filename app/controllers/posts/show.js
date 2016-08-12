@@ -10,6 +10,10 @@ export default Ember.Controller.extend({
         accepted: true
       });
 
+      vote.save().then(() => {
+        console.log("Got it!");
+      });
+
       vote.save();
 
     },
