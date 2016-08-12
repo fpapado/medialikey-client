@@ -8,13 +8,10 @@ export default Ember.Controller.extend({
       let vote = this.store.createRecord('vote', {
         post: model,
         accepted: true
-      })
-
-      vote.save().then(() => {
-        this.store.peekRecord('post', model.id).get('votes').then((votes) => {
-          console.log('got it');
-        });
       });
+
+      vote.save();
+
     },
     votedown(model) {
       console.log('+--- votedown action in controller');
@@ -22,7 +19,7 @@ export default Ember.Controller.extend({
       let vote = this.store.createRecord('vote', {
         post: model,
         accepted: false
-      })
+      });
 
       vote.save();
     }
