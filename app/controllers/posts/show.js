@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  ajax: Ember.inject.service(),
   actions: {
     voteup(model) {
       console.log('+--- voteup action in controller');
@@ -11,7 +10,11 @@ export default Ember.Controller.extend({
         accepted: true
       })
 
-      vote.save();
+      vote.save().then(() => {
+        this.store.peekRecord('post', model.id).get('votes').then((votes) => {
+          console.log('got it');
+        });
+      });
     },
     votedown(model) {
       console.log('+--- votedown action in controller');

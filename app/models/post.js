@@ -6,5 +6,5 @@ export default DS.Model.extend({
   source: DS.attr('string'),
   description: DS.attr('string'),
   credits: DS.attr('string'),
-  votes: DS.hasMany('vote'),
+  votes: DS.hasMany('vote', {async: true})
 });
