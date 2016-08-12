@@ -6,17 +6,18 @@ export default Ember.Controller.extend({
     voteup(model) {
       console.log('+--- voteup action in controller');
 
-      return this.get('ajax').post('/api/votes', {
-        data: {
-          type: "votes",
-          attributes: {
-            id: 1
-          }
-        }
-      });
+      this.store.createRecord('vote', {
+        post: model,
+        accepted: true
+      }).save();
     },
     votedown(model) {
       console.log('+--- votedown action in controller');
+
+      this.store.createRecord('vote', {
+        post: model,
+        accepted: false
+      }).save();
     }
   }
 });
