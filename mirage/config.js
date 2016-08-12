@@ -1,7 +1,8 @@
 export default function() {
-  this.namespace = 'api/';
+  this.namespace = '/api';
 
   this.get('/posts');
+
   this.get('/posts/:id');
 
   this.get('/posts/:id/votes', function(schema, request) {
