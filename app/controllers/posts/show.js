@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  roulette: Ember.inject.service(),
+
   actions: {
     voteup(model) {
       console.log('+--- voteup action in controller');
@@ -11,10 +13,12 @@ export default Ember.Controller.extend({
       });
 
       vote.save().then(() => {
-        console.log("Got it!");
-      });
+        console.log("Voted up!");
+        this.get('roulette').vote(model.id);
+        let next_id = this.get('roulette').get_random();
 
-      vote.save();
+        this.transitionToRoute('posts.show', next_id);
+      });
 
     },
     votedown(model) {
