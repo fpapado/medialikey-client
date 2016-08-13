@@ -40,7 +40,19 @@ export default Ember.Controller.extend({
         accepted: false
       });
 
-      vote.save();
+      vote.save().then(() => {
+        console.log("Voted down!");
+        console.log(this.get('model').id);
+        this.get('roulette').vote(this.get('model').id);
+        let next_id = this.get('roulette').get_random();
+
+        if (next_id && next_id > -1){
+          this.transitionToRoute('posts.show', next_id);
+        }
+        else {
+          this.transitionToRoute('posts.index');
+        }
+      });
     }
   }
 });
