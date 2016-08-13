@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="minder" horiz-adv-x="1000" >
+<font-face font-family="minder" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="fire" unicode="&#xe800;" d="M7 238q10 41 50 131t44 146q39-72 45-145 148 184 154 428 10-6 25-17t58-45 74-74 61-96 34-118q15 36 19 79t-9 80q15-12 41-39t56-75 56-99 31-118-9-127-72-127-152-120q64 129 25 278t-154 229q10-43-11-141t-65-150q7 63 4 102t-12 59l-10 17q-12-70-60-140-26-38-39-69t-9-80 30-105q-135 76-181 154t-24 182z" horiz-adv-x="748" />
+
+<glyph glyph-name="heart" unicode="&#xe801;" d="M456 487q0 95-67 161t-161 67-162-67-66-161q0-137 91-229 37-36 128-104t164-118l73-50q282 190 364 272 91 92 91 229 0 95-66 161t-161 67-161-67-67-161z" horiz-adv-x="911" />
+</font>
+</defs>
+</svg>
