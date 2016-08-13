@@ -27,3 +27,8 @@ body > div{
 .cursor:hover {
   cursor: pointer;
 }
+
+/* Themeing */
+.washed-red {
+  color: #FC735D;
+}
