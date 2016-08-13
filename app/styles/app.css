@@ -32,3 +32,14 @@ body > div{
 .washed-red {
   color: #FC735D;
 }
+.hover-bg-washed-red:hover {
+  background-color: #FC735D;
+  transition: 0.3s;
+}
+.washed-green {
+  color: #3cab68;
+}
+.hover-bg-washed-green:hover {
+  background-color: #3cab68;
+  transition: 0.3s;
+}
