@@ -13,6 +13,7 @@ Router.map(function() {
     });
   });
   this.route('votes');
+  this.route('about');
 });
 
 export default Router;
