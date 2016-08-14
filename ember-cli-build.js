@@ -28,6 +28,7 @@ module.exports = function(defaults) {
   });
 
   app.import('vendor/tachyons.min.css');
+  app.import('vendor/grid.css');
 
   return app.toTree();
 };

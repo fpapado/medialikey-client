@@ -1,8 +1,5 @@
-<h1>Posts Index</h1>
-<ul>
+<div class="clearfix">
   {{#each model as |post|}}
-    <li>
-      {{link-to post.title "posts.show" post}}
-    </li>
+    {{posts/post-card model=post }}
   {{/each}}
-</ul>
+</div>
