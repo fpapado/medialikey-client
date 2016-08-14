@@ -1,7 +1,6 @@
 export default function() {
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('posts'),
     this.use('fade'),
     this.reverse('fade')
   );
@@ -10,5 +9,10 @@ export default function() {
     this.toRoute('posts.show'),
     this.use('crossFade'),
     this.reverse('crossFade')
+  );
+  this.transition(
+    this.toRoute('about'),
+    this.use('fade'),
+    this.reverse('fade')
   );
 }
