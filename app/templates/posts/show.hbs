@@ -1,3 +1,4 @@
+{{#liquid-bind model use="toRight"}}
 <div>
   <img class="w-100" src="{{model.source}}">
   <p class="mt0 f6 mid-gray">Credits: {{model.credits}}</p>
@@ -12,3 +13,4 @@
   voteup=(action "voteup")
   votedown=(action "votedown")
 }}
+{{/liquid-bind}}
