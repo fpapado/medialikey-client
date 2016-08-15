@@ -20,7 +20,7 @@ module.exports = function(environment) {
     },
 
     fastboot: {
-      hostWhiteList: ['medialikey.com', 'medialikey-api.herokuapp.com', /^localhost:\d+$/]
+      hostWhiteList: ['medialikey.com', 'http://medialikey-api.herokuapp.com','https://medialikey-api.herokuapp.com', /^localhost:\d+$/]
     }
   };
 
