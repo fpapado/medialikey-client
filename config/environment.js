@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    host: 'http://localhost:3000',
+    host: 'http://medialikey-api.herokuapp.com',
     modulePrefix: 'medialikey',
     environment: environment,
     rootURL: '/',
@@ -20,7 +20,7 @@ module.exports = function(environment) {
     },
 
     fastboot: {
-      hostWhiteList: ['medialikey.com', 'http://medialikey-api.herokuapp.com','https://medialikey-api.herokuapp.com', /^localhost:\d+$/]
+      hostWhiteList: ['medialikey.com', 'medialikey-api.herokuapp.com', /^localhost:\d+$/]
     }
   };
 
@@ -47,7 +47,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV['host'] = 'http://medialikey-api.herokuapp.com';
   }
 
   return ENV;
