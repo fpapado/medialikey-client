@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    host: 'http://medialikey-api.herokuapp.com',
+    host: 'https://medialikey-api.herokuapp.com',
     modulePrefix: 'medialikey',
     environment: environment,
     rootURL: '/',
