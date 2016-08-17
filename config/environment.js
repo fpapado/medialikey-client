@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    host: 'https://medialikey-api.herokuapp.com',
     modulePrefix: 'medialikey',
     environment: environment,
     rootURL: '/',
@@ -16,6 +17,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    fastboot: {
+      hostWhiteList: ['medialikey.com', 'medialikey-api.herokuapp.com', /^localhost:\d+$/]
     }
   };
 
@@ -42,7 +47,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
   }
 
   return ENV;
