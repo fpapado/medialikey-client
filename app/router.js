@@ -12,6 +12,10 @@ Router.map(function() {
       path: ':post_id'
     });
     this.route('new');
+
+    this.route('edit', {
+      path: ':post_id/edit'
+    });
   });
   this.route('votes');
   this.route('about');
