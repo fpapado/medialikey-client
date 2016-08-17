@@ -1,0 +1,13 @@
+<div class="ph4-ns">
+  <form {{action "save" on="submit"}} class="">
+    {{#if errorMessage}}
+      <h2 class="washed-red f5">{{errorMessage}}</h2>
+    {{/if}}
+    {{input value=model.title placeholder="Title" class="input fit"}}<br>
+    {{input value=model.source placeholder="Source" class="input fit"}}<br>
+    {{input value=model.description placeholder="Description" class="input fit"}}<br>
+    {{input value=model.credits placeholder="Credits" class="input fit"}}<br>
+    <button {{action "cancel"}} class="">Cancel</button>
+    <input type="submit" value="Save" class="">
+  </form>
+</div>

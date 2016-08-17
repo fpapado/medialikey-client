@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('show', {
       path: ':post_id'
     });
+    this.route('new');
   });
   this.route('votes');
   this.route('about');
