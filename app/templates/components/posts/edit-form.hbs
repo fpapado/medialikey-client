@@ -1,13 +1,24 @@
-<div class="ph4-ns">
-  <form {{action "save" on="submit"}} class="">
-    {{#if errorMessage}}
-      <h2 class="washed-red f5">{{errorMessage}}</h2>
-    {{/if}}
-    {{input value=model.title placeholder="Title" class="input fit"}}<br>
-    {{input value=model.source placeholder="Source" class="input fit"}}<br>
-    {{input value=model.description placeholder="Description" class="input fit"}}<br>
-    {{input value=model.credits placeholder="Credits" class="input fit"}}<br>
-    <button {{action "cancel"}} class="">Cancel</button>
-    <input type="submit" value="Save" class="">
-  </form>
-</div>
+<form class="">
+  {{#if errorMessage}}
+  <h2 class="washed-red f5">{{errorMessage}}</h2>
+  {{/if}}
+
+  <label>Title</label>
+  {{input value=model.title placeholder="Title" class="input fit"}}
+
+  <label>Source</label>
+  {{input value=model.source placeholder="Source" class="input fit"}}
+
+  <label>Description</label>
+  {{input value=model.description placeholder="Description" class="input fit"}}
+
+  <label>Credits</label>
+  {{input value=model.credits placeholder="Credits" class="input fit"}}
+
+  <div class="fl w-50 pr1 pr2-ns">
+    <button {{action "cancel"}} class="db w-100 hover-bg-washed-red hover-white input-reset black ba b--black-20 ph3 ph4-ns pv2 pv3-ns bg-white fw6 ttu f6 tracked mr3 cursor">Cancel</button>
+  </div>
+  <div class="fl w-50 pl1 pl2-ns">
+    <button {{action "save"}} class="db w-100 hover-bg-washed-green hover-white input-reset black ba b--black-20 ph3 ph4-ns pv2 pv3-ns bg-white fw6 ttu f6 tracked mr3 cursor">Save</button>
+  </div>
+</form>
