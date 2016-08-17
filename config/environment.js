@@ -2,7 +2,6 @@
 
 module.exports = function(environment) {
   var ENV = {
-    host: 'https://medialikey-api.herokuapp.com',
     modulePrefix: 'medialikey',
     environment: environment,
     rootURL: '/',
@@ -47,6 +46,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV['host'] = 'https://medialikey-api.herokuapp.com';
   }
 
   return ENV;
