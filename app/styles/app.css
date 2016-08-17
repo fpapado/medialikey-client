@@ -43,3 +43,17 @@ body > div{
   background-color: #51c57f;
   transition: 0.3s;
 }
+
+.pa {
+  position: absolute;
+}
+
+.square {
+  width: 100%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}

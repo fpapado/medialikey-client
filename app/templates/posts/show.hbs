@@ -1,8 +1,9 @@
+<div class="ph5-ns">
 {{#liquid-bind model use="toRight"}}
-  <div class="mb2 mb4-ns">
+  <div class="center square ba bw1 b--light-gray flex items-center">
     <img class="w-100" src="{{model.source}}">
-    <p class="mt0 mb0 f6 mid-gray">Credits: {{model.credits}}</p>
   </div>
+  <p class="mt0 mb0 f6 mid-gray">Credits: {{model.credits}}</p>
 {{/liquid-bind}}
   <!--
   <p>{{model.title}}</p>
@@ -14,3 +15,4 @@
     voteup=(action "voteup")
     votedown=(action "votedown")
   }}
+</div>
