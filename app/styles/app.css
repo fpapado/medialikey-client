@@ -39,6 +39,9 @@ body > div{
 .bg-washed-red {
   background-color: #FC735D;
 }
+.b--washed-red {
+  border-color: #FC735D;
+}
 .washed-green {
   color: #51c57f;
 }
