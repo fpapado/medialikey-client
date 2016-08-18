@@ -1,9 +1,9 @@
 <div class="ph5-ns">
-{{#liquid-bind model use="crossFade"}}
+{{#liquid-bind model class="animPanel" as |newPhoto|}}
   <div class="center square ba bw1 b--light-gray flex items-center">
-    <img class="w-100" src="{{model.source}}">
+    <img class="w-100" src="{{newPhoto.source}}">
   </div>
-  <p class="mt1 mb2 f6 gray">Credits: {{model.credits}}</p>
+  <p class="mt1 mb2 f6 gray">Credits: {{newPhoto.credits}}</p>
 {{/liquid-bind}}
   <!--
   <p>{{model.title}}</p>

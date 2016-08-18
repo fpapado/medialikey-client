@@ -15,4 +15,8 @@ export default function() {
     this.use('fade'),
     this.reverse('fade')
   );
+  this.transition(
+    this.hasClass('animPanel'),
+    this.use('crossFade', {duration: 400})
+  );
 }
