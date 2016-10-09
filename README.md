@@ -1,7 +1,15 @@
 # Medialikey
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Medialikey is a web app that loads a list of pictures and allows users to
+designate them as "like" or "not like", as well as the ability to view and
+download their "like" list.  
+
+The aim is to provide a way to gather inspiration, by providing a user-curated
+group of photos and a quick way to sort through one's preferences.
+It's similar to something like [dribbble](https://dribbble.com/), but more
+focused on the receiving end, than the showcasing part.  
+
+This repository is the front-end, web client, built with Ember.
 
 ## Prerequisites
 
